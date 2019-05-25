@@ -15,12 +15,23 @@
 }
 
 .content {
+	//set parent div to have flexbox display
+	display: flex;
 }
 
 .sidebar {
 	background-color: var(--color-grey-dark-1);
+
+	// define .sidebar width using flexbox
+	// to have width 18% from parent width which is .content
+	flex: 0 0 18%;
 }
 
 .hotel-view {
 	background-color: #fff;
+	background-color: orangered;
+
+	// define .hotel-view width using flexbox (flexbox-grow)
+	// to grow on the remaining parent width (100% - 18% = 82%)
+	flex: 1;
 }
