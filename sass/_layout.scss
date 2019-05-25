@@ -1,7 +1,7 @@
 .container {
 	max-width: 120rem;
 	margin: 8rem auto;
-	background-color: var(--color-grey-light-2);
+	background-color: var(--color-grey-light-1);
 	box-shadow: var(--shadow-dark);
 
 	//debug, removed when real content exist!!
@@ -9,9 +9,15 @@
 }
 
 .header {
+	font-size: 1.4rem;
 	height: 7rem;
 	background-color: #fff;
 	border-bottom: var(--color-grey-light-2);
+
+	//set parent div to have flexbox display
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .content {
