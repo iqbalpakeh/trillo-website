@@ -4,7 +4,7 @@
 
 .logo {
 	height: 3.25rem;
-	margin-left: 3rem;
+	margin-left: 2rem;
 }
 
 // --------------------------------------------------
@@ -77,8 +77,6 @@
 // --------------------------------------------------
 
 .user-nav {
-	background-color: greenyellow;
-
 	// flex property to makesure the background color of each item
 	// fill full-heigh of parent height.
 	align-self: stretch;
@@ -104,24 +102,37 @@
 	}
 
 	&__icon-box {
+		// position the notification "above" the icon
+		position: relative;
 	}
 
 	&__icon {
 		height: 2.25rem;
 		width: 2.25rem;
+		// Change SVG icon color
+		fill: var(--color-grey-dark-2);
 	}
 
 	&__notification {
-	}
-
-	&__user {
+		font-size: 0.8rem;
+		height: 1.75rem;
+		width: 1.75rem;
+		border-radius: 50%;
+		background-color: var(--color-primary);
+		color: #fff;
+		// position the notification "above" the icon
+		position: absolute;
+		top: 1.5rem;
+		right: 1.1rem;
+		// position the text right in the center
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__user-photo {
 		height: 3.75rem;
 		border-radius: 50%;
-	}
-
-	&__user-name {
+		margin-right: 1rem;
 	}
 }
