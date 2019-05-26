@@ -31,11 +31,19 @@
 	// define .sidebar width using flexbox
 	// to have width 18% from parent width which is .content
 	flex: 0 0 18%;
+
+	// set this as flex container
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .hotel-view {
 	background-color: #fff;
+
+	//debug, temporary height before real content
 	background-color: orangered;
+	height: 80rem;
 
 	// define .hotel-view width using flexbox (flexbox-grow)
 	// to grow on the remaining parent width (100% - 18% = 82%)
