@@ -78,6 +78,31 @@
 
 .user-nav {
 	background-color: greenyellow;
+
+	// flex property to makesure the background color of each item
+	// fill full-heigh of parent height.
+	align-self: stretch;
+
+	// turn to display flex container to align the children
+	display: flex;
+	align-items: center;
+
+	// select all direct chilren of .user_nav
+	& > * {
+		padding: 2rem;
+		cursor: pointer;
+		height: 100%;
+
+		// to let children align with main axis
+		display: flex;
+		align-items: center;
+	}
+
+	// select all direct chilren of .user_nav when hovered
+	& > *:hover {
+		background-color: var(--color-grey-light-2);
+	}
+
 	&__icon-box {
 	}
 
