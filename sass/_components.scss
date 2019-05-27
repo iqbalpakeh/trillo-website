@@ -234,15 +234,23 @@
 
 .overview {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--color-grey-light-2);
 
 	&__heading {
+		font-size: 2.25rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding: 1.5rem 3rem;
 	}
 
 	&__stars {
 		// to create empty white-space after the stars! This is
 		// good strategy to use with flexbox.
 		margin-right: auto;
+		// to align the stars
+		display: flex;
 	}
 
 	&__icon-star,
@@ -262,5 +270,25 @@
 	}
 
 	&__rating-count {
+	}
+}
+
+// --------------------------------------------------
+// BUTTON INLINE
+// --------------------------------------------------
+
+.btn-inline {
+	border: none;
+	color: var(--color-primary);
+	font-size: inherit;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	display: inline-block;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.2s;
+
+	&:hover {
+		color: var(--color-grey-dark-1);
 	}
 }
