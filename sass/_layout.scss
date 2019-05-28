@@ -41,9 +41,6 @@
 .hotel-view {
 	background-color: #fff;
 
-	//debug, temporary height before real content
-	height: 80rem;
-
 	// define .hotel-view width using flexbox (flexbox-grow)
 	// to grow on the remaining parent width (100% - 18% = 82%)
 	flex: 1;
@@ -57,6 +54,7 @@
 }
 
 .description {
+	font-size: 1.4rem;
 	background-color: #fff;
 	box-shadow: var(--shadow-light);
 	padding: 3rem;
