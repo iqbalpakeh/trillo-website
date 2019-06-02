@@ -1,3 +1,17 @@
+// --------------------------------------------------
+// MEDIA QUERY DEFINITION
+// --------------------------------------------------
+
+$bp-largest: 75em; // 1200px -> 1200 / 16 = 75;
+$bp-large: 68.75em; // 1100px -> 1100 / 16 = 68.75;
+$bp-medium: 56.25em; // 900px -> 900 / 16 = 56.25;
+$bp-small: 37.5em; // 600px -> 600 / 16 = 37.5;
+$bp-small: 31.5em; // 500px -> 500 / 16 = 31.5;
+
+// --------------------------------------------------
+// BASE DEFINITION
+// --------------------------------------------------
+
 :root {
 	// Define variable here and access from any selector!
 
@@ -19,12 +33,6 @@
 
 	--line: 1px solid var(--color-grey-light-2);
 }
-
-// Media query variable definition
-$bp-largest: 75em; // 1200px -> 1200 / 16 = 75;
-$bp-large: 68.75em; // 1100px -> 1100 / 16 = 68.75;
-$bp-medium: 56.25em; // 900px -> 900 / 16 = 56.25;
-$bp-small: 37.5em; // 600px -> 600 / 16 = 37.5;
 
 * {
 	margin: 0;
