@@ -21,7 +21,8 @@
 }
 
 // Media query variable definition
-$bp-largest: 75em; // 1200px;
+$bp-largest: 75em; // 1200px -> 1200 / 16 = 75;
+$bp-large: 68.75em; // 1100px -> 1100 / 16 = 68.75;
 
 * {
 	margin: 0;
@@ -38,6 +39,11 @@ html {
 	box-sizing: border-box;
 	// 1rem = 10px, 10px/16px = 62.5%, 16px is browser default size;
 	font-size: 62.5%;
+
+	@media only screen and (max-width: $bp-large) {
+		// 1rem = 8px/16px = 50%
+		font-size: 50%;
+	}
 }
 
 body {
